@@ -1,34 +1,25 @@
-html{
-  background: linear-gradient(to right, #5D3FD3, purple);
+html {
+  background: linear-gradient(to right, #5d3fd3, purple);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.bgr {
+  display: inline-block;
+  /* position: relative; */
+  animation-name: sizeChange;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: none;
 
+  border: 3px solid transparent;
+  border-radius: 10%;
+  background-image: linear-gradient(rgb(187, 0, 255), rgb(187, 0, 255)),
+    linear-gradient(to right, red 0%, orange 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation-direction: alternate-reverse;
 }
-.bgr{
-  border-radius: 3px;
-}
-#bgr0{
-}
-#bgr1{
-}
-#bgr2{
-}
-#bgr3{
-}
-#bgr4{
-}
-#bgr5{
-}
-#bgr6{
-}
-#bgr7{
-}
-#bgr8{
-}
-#bgr9{
-}
-#bgr10{
-}
-#aboutRon{
+#aboutRon {
   text-align: center;
   animation-name: move;
   position: absolute;
@@ -36,6 +27,14 @@ html{
   animation-fill-mode: forwards;
 }
 
+@keyframes sizeChange {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
 @keyframes move {
   from {
     top: 200px;
@@ -53,10 +52,10 @@ html{
 @keyframes appear {
   from {
     opacity: 0;
-}
-to {
+  }
+  to {
     opacity: 1;
-}
+  }
 }
 .mainAndAside {
   display: grid;
@@ -68,8 +67,8 @@ to {
   background-color: skyblue;
   border-radius: 50%;
 }
-#fork{
+#fork {
   left: 50%;
   transform: translate(-50%, -50%);
-  display:none;
+  display: none;
 }
