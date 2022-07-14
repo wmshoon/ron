@@ -26,3 +26,19 @@ for (var i = 0; i < 12; i++) {
 }
 
 document.write('<box id = "aboutRon">About Ron</box>');
+
+/* 윈도우의 높이 */
+
+var winH = window.innerHeight; //500
+
+/* 스크롤 값 */
+
+var scrollY = window.scrollY; //0
+
+/* item 4의 top 값 */
+
+var posFromTop = item4.getBoundingClientRect().top; //1500
+
+/* item 4의 절대좌표 값 */
+
+var absolutePos = scrollY + posFromTop; //1500

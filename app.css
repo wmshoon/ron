@@ -1,0 +1,217 @@
+html {
+  background: linear-gradient(to right, #5d3fd3, purple);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.bgr {
+  display: inline-block;
+  /* position: relative; */
+  -webkit-animation-name: sizeChange;
+          animation-name: sizeChange;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  border: 3px solid transparent;
+  border-radius: 10%;
+  background-image: linear-gradient(rgb(187, 0, 255), rgb(187, 0, 255)), linear-gradient(to right, red 0%, orange 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation-direction: alternate-reverse;
+}
+
+#aboutRon {
+  text-align: center;
+  -webkit-animation-name: move;
+          animation-name: move;
+  position: absolute;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sizeChange {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes sizeChange {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+@-webkit-keyframes move {
+  from {
+    top: 200px;
+    font-size: 500%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    top: 200px;
+    font-size: 400%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes move {
+  from {
+    top: 200px;
+    font-size: 500%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    top: 200px;
+    font-size: 400%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mainAndAside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ball {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+  border-radius: 50%;
+}
+
+#fork {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.4s;
+          animation: fade-in 1.4s;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.7, 0.7);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.7, 0.7);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bounce {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+  position: relative;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: -2px;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: -2px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: -2px;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: -2px;
+  }
+}
+body,
+html {
+  height: 100%;
+  color: #fff;
+  font: 30px sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #f23e02;
+}
+
+.full-screen {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.center {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center__inner {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.background-primary {
+  background: #013750;
+}
+
+.background-secondary {
+  background: #f23e02;
+}
+
+.color-primary {
+  color: #013750;
+}/*# sourceMappingURL=app.css.map */
