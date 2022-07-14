@@ -1,22 +1,41 @@
 html{
-  background-image: linear-gradient(90deg, #5D3FD3, purple);
+  background: linear-gradient(to right, #5D3FD3, purple);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
 }
-body {
-  font-family: "Edu SA Beginner", cursive;
+.bgr{
+  border-radius: 3px;
 }
-nav{
+#bgr0{
+}
+#bgr1{
+}
+#bgr2{
+}
+#bgr3{
+}
+#bgr4{
+}
+#bgr5{
+}
+#bgr6{
+}
+#bgr7{
+}
+#bgr8{
+}
+#bgr9{
+}
+#bgr10{
+}
+#aboutRon{
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  animation-name: appear;
-  animation-duration: 2s;
-}
-h1 {
   animation-name: move;
   position: absolute;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+
 @keyframes move {
   from {
     top: 200px;
