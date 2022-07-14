@@ -7,6 +7,7 @@ html {
   display: inline-block;
   animation-name: sizeChange;
   animation-iteration-count: infinite;
+  animation-duration: 2s;
   animation-direction: alternate-reverse;
   animation-fill-mode: none;
   border: 3px solid transparent;
@@ -19,7 +20,7 @@ html {
 }
 #aboutRon {
   text-align: center;
-  animation-name: move;
+  animation-name: makeItSmaller;
   position: absolute;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -33,7 +34,7 @@ html {
     transform: scale(0.9);
   }
 }
-@keyframes move {
+@keyframes makeItSmaller {
   from {
     top: 200px;
     font-size: 500%;
@@ -65,108 +66,16 @@ html {
   background-color: skyblue;
   border-radius: 50%;
 }
-#fork {
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-
 .hidden {
   opacity: 0;
 }
 
-.fade-in {
-  animation: fade-in 1.4s;
-}
-
-@keyframes fade-in {
+@keyframes fade-out {
   from {
+    opacity: 1;
+  }
+  to {
     opacity: 0;
     transform: scale(0.7, 0.7);
   }
-  to {
-    opacity: 1;
-  }
-}
-
-.bounce {
-  animation: bounce 1s infinite;
-  position: relative;
-}
-
-@keyframes bounce {
-  0% {
-    top: -2px;
-  }
-  50% {
-    top: 2px;
-  }
-  100% {
-    top: -2px;
-  }
-}
-
-// Variables
-//
-$primary-color: #013750;
-$secondary-color: #f23e02;
-
-$font-color: #fff;
-$font-color-inverse: #01010b;
-
-$container-width: 1200px;
-$grid-breakpoint: 800px;
-$grid-margin: 1%;
-$grid-number: 12;
-
-body,
-html {
-  height: 100%;
-  color: $font-color;
-  font: 30px sans-serif;
-}
-
-a {
-  color: $font-color;
-  text-decoration: none;
-
-  &:hover {
-    color: $secondary-color;
-  }
-}
-
-// Full screen
-//
-
-.full-screen {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.center {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.center__inner {
-  max-width: 1000px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-// colors
-
-.background-primary {
-  background: $primary-color;
-}
-
-.background-secondary {
-  background: $secondary-color;
-}
-
-.color-primary {
-  color: $primary-color;
 }
