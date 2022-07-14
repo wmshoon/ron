@@ -1,17 +1,15 @@
 html {
+  color: black;
   background: linear-gradient(to right, #5d3fd3, purple);
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .bgr {
   display: inline-block;
-  /* position: relative; */
   -webkit-animation-name: sizeChange;
           animation-name: sizeChange;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
   animation-direction: alternate-reverse;
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;

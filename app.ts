@@ -37,8 +37,8 @@ var scrollY = window.scrollY; //0
 
 /* item 4의 top 값 */
 
-var posFromTop = item4.getBoundingClientRect().top; //1500
+// var posFromTop = item4.getBoundingClientRect().top; //1500
 
 /* item 4의 절대좌표 값 */
 
-var absolutePos = scrollY + posFromTop; //1500
+// var absolutePos = scrollY + posFromTop; //1500
