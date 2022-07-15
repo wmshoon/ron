@@ -11,34 +11,19 @@ const colorArray = [
 var lengthOfColorArray = colorArray.length;
 
 const boxWidthAndHeight = [
-  199, 143, 165, 138, 102, 124, 180, 143, 179, 200, 132, 131, 143, 143, 246, 47,
-  62, 63, 166, 196, 4, 23, 57, 127, 210, 74, 114, 115, 137, 217, 83, 112, 195,
-  209, 231, 31, 42, 51, 85, 190, 30, 106, 107, 112, 204,
+  199, 143, 165, 138, 102, 124, 180, 143, 179, 200, 132, 131, 143, 143, 166,
+  196, 127, 210, 74, 114, 115, 137, 217, 83, 112, 195, 209, 231, 31, 42, 51, 85,
+  190, 30, 106, 107, 112, 204,
 ];
 
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 18; i++) {
   document.write(`<box class = "bgr" id = "bgr${i}"></box>`);
-  const aaaa: any = document.getElementById(`bgr${i}`);
-  aaaa.style.width = `${boxWidthAndHeight[i]}px`;
-  aaaa.style.height = `${boxWidthAndHeight[i]}px`;
-  aaaa.style.animationName = "sizeChange";
-  aaaa.style.margin = `${Math.random() * Math.random() * 100}px`;
+  const targetElement: any = document.getElementById(`bgr${i}`);
+  targetElement.style.width = `${boxWidthAndHeight[i]}px`;
+  targetElement.style.height = `${boxWidthAndHeight[i]}px`;
+  targetElement.style.animationName = "sizeChange";
+  targetElement.style.margin = `${Math.random() * Math.random() * 100}px`;
 }
 
 document.write('<box id = "aboutRon">About Ron</box>');
-
-/* 윈도우의 높이 */
-
-var winH = window.innerHeight; //500
-
-/* 스크롤 값 */
-
-var scrollY = window.scrollY; //0
-
-/* item 4의 top 값 */
-
-// var posFromTop = item4.getBoundingClientRect().top; //1500
-
-/* item 4의 절대좌표 값 */
-
-// var absolutePos = scrollY + posFromTop; //1500
+document.write("<title>About Ron</title>");

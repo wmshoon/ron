@@ -9,16 +9,17 @@ var colorArray = [
 ];
 var lengthOfColorArray = colorArray.length;
 var boxWidthAndHeight = [
-    199, 143, 165, 138, 102, 124, 180, 143, 179, 200, 132, 131, 143, 143, 246, 47,
-    62, 63, 166, 196, 4, 23, 57, 127, 210, 74, 114, 115, 137, 217, 83, 112, 195,
-    209, 231, 31, 42, 51, 85, 190, 30, 106, 107, 112, 204,
+    199, 143, 165, 138, 102, 124, 180, 143, 179, 200, 132, 131, 143, 143, 166,
+    196, 127, 210, 74, 114, 115, 137, 217, 83, 112, 195, 209, 231, 31, 42, 51, 85,
+    190, 30, 106, 107, 112, 204,
 ];
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 18; i++) {
     document.write("<box class = \"bgr\" id = \"bgr".concat(i, "\"></box>"));
-    var aaaa = document.getElementById("bgr".concat(i));
-    aaaa.style.width = "".concat(boxWidthAndHeight[i], "px");
-    aaaa.style.height = "".concat(boxWidthAndHeight[i], "px");
-    aaaa.style.animationName = "sizeChange";
-    aaaa.style.margin = "".concat(Math.random() * Math.random() * 100, "px");
+    var targetElement = document.getElementById("bgr".concat(i));
+    targetElement.style.width = "".concat(boxWidthAndHeight[i], "px");
+    targetElement.style.height = "".concat(boxWidthAndHeight[i], "px");
+    targetElement.style.animationName = "sizeChange";
+    targetElement.style.margin = "".concat(Math.random() * Math.random() * 100, "px");
 }
 document.write('<box id = "aboutRon">About Ron</box>');
+document.write("<title>About Ron</title>");
