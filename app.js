@@ -13,7 +13,7 @@ var boxWidthAndHeight = [
     196, 127, 210, 74, 114, 115, 137, 217, 83, 112, 195, 209, 231, 31, 42, 51, 85,
     190, 30, 106, 107, 112, 204,
 ];
-for (var i = 0; i < 18; i++) {
+for (var i = 0; i < 12; i++) {
     document.write("<box class = \"bgr\" id = \"bgr".concat(i, "\"></box>"));
     var targetElement = document.getElementById("bgr".concat(i));
     targetElement.style.width = "".concat(boxWidthAndHeight[i], "px");
@@ -23,3 +23,4 @@ for (var i = 0; i < 18; i++) {
 }
 document.write('<box id = "aboutRon">About Ron</box>');
 document.write("<title>About Ron</title>");
+document.write("<noscript><h1>fork you. enable JS</h1></noscript>");

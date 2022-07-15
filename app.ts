@@ -16,7 +16,7 @@ const boxWidthAndHeight = [
   190, 30, 106, 107, 112, 204,
 ];
 
-for (var i = 0; i < 18; i++) {
+for (var i = 0; i < 12; i++) {
   document.write(`<box class = "bgr" id = "bgr${i}"></box>`);
   const targetElement: any = document.getElementById(`bgr${i}`);
   targetElement.style.width = `${boxWidthAndHeight[i]}px`;
@@ -27,4 +27,3 @@ for (var i = 0; i < 18; i++) {
 
 document.write('<box id = "aboutRon">About Ron</box>');
 document.write("<title>About Ron</title>");
-asdfasdf;
