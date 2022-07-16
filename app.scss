@@ -10,13 +10,11 @@ html {
   animation-duration: 2s;
   animation-direction: alternate-reverse;
   animation-fill-mode: none;
-  border: 3px solid transparent;
+  border: 5px solid transparent;
   border-radius: 10%;
-  background-image: linear-gradient(rgb(187, 0, 255), rgb(187, 0, 255)),
-    linear-gradient(to right, red 0%, orange 100%);
-  background-origin: border-box;
+  // background: linear-gradient(#b100b8 90%, #6a82fb);
+  background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%);
   background-clip: content-box, border-box;
-  animation-direction: alternate-reverse;
 }
 #aboutRon {
   text-align: center;
