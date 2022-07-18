@@ -23,7 +23,7 @@ for (var i = 0; i < 12; i++) {
   targetElement.style.width = `${boxWidthAndHeight[i]}rem`;
   targetElement.style.height = `${boxWidthAndHeight[i]}rem`;
   targetElement.style.animationName = "sizeChange";
-  targetElement.style.margin = `${Math.random() * Math.random() * 100}px`;
+  // targetElement.style.margin = `${Math.random() * Math.random() * 100}px`;
 }
 
 document.write('<box id = "aboutRon">About</box>');
