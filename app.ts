@@ -29,7 +29,7 @@ for (var i = 0; i < 12; i++) {
 document.write('<box id = "aboutRon">About</box>');
 const targetElement: any = document.getElementById(`bgr${3}`);
 
-document.write("<title>About Ron</title>");
+document.write("<title>About</title>");
 
 // function setPositionOfElement(positionX, positionY): any {}
 
