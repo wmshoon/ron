@@ -20,10 +20,10 @@ for (var i = 0; i < 12; i++) {
     targetElement_1.style.width = "".concat(boxWidthAndHeight[i], "rem");
     targetElement_1.style.height = "".concat(boxWidthAndHeight[i], "rem");
     targetElement_1.style.animationName = "sizeChange";
-    targetElement_1.style.margin = "".concat(Math.random() * Math.random() * 100, "px");
+    // targetElement.style.margin = `${Math.random() * Math.random() * 100}px`;
 }
 document.write('<box id = "aboutRon">About</box>');
 var targetElement = document.getElementById("bgr".concat(3));
-document.write("<title>About Ron</title>");
+document.write("<title>About</title>");
 // function setPositionOfElement(positionX, positionY): any {}
-Scale();
+// Scale();

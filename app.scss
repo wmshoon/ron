@@ -4,6 +4,9 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .bgr {
+  position: absolute;
+  top: 100px;
+  left: 100px;
   display: inline-block;
   animation-name: sizeChange;
   animation-iteration-count: infinite;

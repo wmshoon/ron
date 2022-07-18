@@ -5,6 +5,9 @@ html {
 }
 
 .bgr {
+  position: absolute;
+  top: 100px;
+  left: 100px;
   display: inline-block;
   -webkit-animation-name: sizeChange;
           animation-name: sizeChange;
