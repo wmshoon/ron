@@ -31,4 +31,4 @@ const targetElement: any = document.getElementById(`bgr${3}`);
 
 document.write("<title>About</title>");
 
-// Scale();
+Scale();
