@@ -4,7 +4,6 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .bgr {
-  position: absolute;
   top: 100px;
   left: 100px;
   display: inline-block;
@@ -18,6 +17,9 @@ html {
   // background: linear-gradient(#b100b8 90%, #6a82fb);
   background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%);
   background-clip: content-box, border-box;
+}
+#bgr1 {
+  left: 10000px;
 }
 #aboutRon {
   text-align: center;

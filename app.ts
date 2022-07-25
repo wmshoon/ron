@@ -7,11 +7,8 @@ const colorArray = [
   "#ec38bc",
   "#fdeff9",
 ];
-const Scale = function () {
-  var scaleX = document.documentElement.scrollWidth;
-  var scaleY = document.documentElement.scrollHeight;
-  alert(scaleX + "!" + scaleY + "!");
-};
+var scaleX = document.documentElement.scrollWidth;
+var scaleY = document.documentElement.scrollHeight;
 
 var lengthOfColorArray = colorArray.length;
 
@@ -23,12 +20,13 @@ for (var i = 0; i < 12; i++) {
   targetElement.style.width = `${boxWidthAndHeight[i]}rem`;
   targetElement.style.height = `${boxWidthAndHeight[i]}rem`;
   targetElement.style.animationName = "sizeChange";
-  // targetElement.style.margin = `${Math.random() * Math.random() * 100}px`;
+  targetElement.style.position = "absolute";
+  //위치지정 안함. 랜덤 크기로 뿌리기만 함.
+  //app.scss에서 하는걸로
 }
 
 document.write('<box id = "aboutRon">About</box>');
-const targetElement: any = document.getElementById(`bgr${3}`);
 
 document.write("<title>About</title>");
 
-Scale();
+// Scale();

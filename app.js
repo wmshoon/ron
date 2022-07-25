@@ -7,11 +7,8 @@ var colorArray = [
     "#ec38bc",
     "#fdeff9",
 ];
-var Scale = function () {
-    var scaleX = document.documentElement.scrollWidth;
-    var scaleY = document.documentElement.scrollHeight;
-    alert(scaleX + "!" + scaleY + "!");
-};
+var scaleX = document.documentElement.scrollWidth;
+var scaleY = document.documentElement.scrollHeight;
 var lengthOfColorArray = colorArray.length;
 var boxWidthAndHeight = [7, 12, 10, 9, 12, 8, 12, 13, 13, 9, 7, 11];
 for (var i = 0; i < 12; i++) {
@@ -20,10 +17,9 @@ for (var i = 0; i < 12; i++) {
     targetElement_1.style.width = "".concat(boxWidthAndHeight[i], "rem");
     targetElement_1.style.height = "".concat(boxWidthAndHeight[i], "rem");
     targetElement_1.style.animationName = "sizeChange";
-    // targetElement.style.margin = `${Math.random() * Math.random() * 100}px`;
+    targetElement_1.style.position = "absolute";
 }
 document.write('<box id = "aboutRon">About</box>');
 var targetElement = document.getElementById("bgr".concat(3));
 document.write("<title>About</title>");
-// function setPositionOfElement(positionX, positionY): any {}
 // Scale();
