@@ -22,11 +22,17 @@ for (var i = 0; i < 12; i++) {
   targetElement.style.animationName = "sizeChange";
   targetElement.style.position = "absolute";
   //위치지정 안함. 랜덤 크기로 뿌리기만 함.
-  //app.scss에서 하는걸로
 }
 
 document.write('<box id = "aboutRon">About</box>');
 
 document.write("<title>About</title>");
 
-// Scale();
+if (scaleX / scaleY > 16 / 9 || scaleX / scaleY < 1) {
+  alert(
+    "sorry. not available for this kind of device. the site will be redirected to github page automatically."
+  );
+  window.location.href = "http://github.com/wmshoon/ron";
+}
+
+alert(scaleX / scaleY);
